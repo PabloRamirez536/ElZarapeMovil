@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgraund_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgraund_gradient"
+        tools:context=".RegistroCliente">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Registro"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbNombre"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ingresa tu nombre:"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNombre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbApellidos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ingresa tus apellidos:"
+            app:layout_constraintEnd_toEndOf="@+id/lbNombre"
+            app:layout_constraintStart_toStartOf="@+id/lbNombre"
+            app:layout_constraintTop_toBottomOf="@+id/lbNombre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lbNombre"
+                app:layout_constraintStart_toStartOf="@+id/lbNombre"
+                app:layout_constraintTop_toBottomOf="@+id/lbNombre" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbTelefono"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ingresa tu teléfono:"
+            app:layout_constraintEnd_toEndOf="@+id/lbApellidos"
+            app:layout_constraintStart_toStartOf="@+id/lbApellidos"
+            app:layout_constraintTop_toBottomOf="@+id/lbApellidos">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lbApellidos"
+                app:layout_constraintStart_toStartOf="@+id/lbApellidos"
+                app:layout_constraintTop_toBottomOf="@+id/lbApellidos" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbUsuario"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ingresa tu usuario:"
+            app:layout_constraintEnd_toEndOf="@+id/lbTelefono"
+            app:layout_constraintStart_toStartOf="@+id/lbTelefono"
+            app:layout_constraintTop_toBottomOf="@+id/lbTelefono">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lbTelefono"
+                app:layout_constraintStart_toStartOf="@+id/lbTelefono"
+                app:layout_constraintTop_toBottomOf="@+id/lbTelefono" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbContrasenia"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ingresa tu contraseña:"
+            app:layout_constraintEnd_toEndOf="@+id/lbUsuario"
+            app:layout_constraintStart_toStartOf="@+id/lbUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/lbUsuario">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtContrasenia"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lbUsuario"
+                app:layout_constraintStart_toStartOf="@+id/lbUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/lbUsuario" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbEstado"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Selecciona tu estado:"
+            app:layout_constraintEnd_toEndOf="@+id/lbContrasenia"
+            app:layout_constraintStart_toStartOf="@+id/lbContrasenia"
+            app:layout_constraintTop_toBottomOf="@+id/lbContrasenia">
+
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/lbContrasenia"
+                app:layout_constraintStart_toStartOf="@+id/lbContrasenia"
+                app:layout_constraintTop_toBottomOf="@+id/lbContrasenia" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbCiudad"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ingresa tu ciudad:"
+            app:layout_constraintEnd_toEndOf="@+id/lbEstado"
+            app:layout_constraintStart_toStartOf="@+id/lbEstado"
+            app:layout_constraintTop_toBottomOf="@+id/lbEstado">
+
+            <Spinner
+                android:id="@+id/spinnerCiudad"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/lbEstado"
+                app:layout_constraintStart_toStartOf="@+id/lbEstado"
+                app:layout_constraintTop_toBottomOf="@+id/lbEstado" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Registrar"
+            app:layout_constraintEnd_toEndOf="@id/lbCiudad"
+            app:layout_constraintStart_toStartOf="@id/lbCiudad"
+            app:layout_constraintTop_toBottomOf="@id/lbCiudad" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
